@@ -1,5 +1,5 @@
 #!/bin/bash
-JOB_NAME=Dev/src
+#JOB_NAME=Dev/src
 image_tag=$(echo "$JOB_NAME" | awk -F "/" '{print $1}')
 proj_name=$(echo "$JOB_NAME" | awk -F "/" '{print $2}')
 echo "$ip_adress" > /opt/tmp/jen_ip
