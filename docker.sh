@@ -2,7 +2,7 @@
 #JOB_NAME=Dev/src
 image_tag=$(echo "$JOB_NAME" | awk -F "/" '{print $1}')
 proj_name=$(echo "$JOB_NAME" | awk -F "/" '{print $2}')
-echo "$ip_adress" > /opt/tmp/jen_ip
+echo "$ip_address" > /opt/tmp/jen_ip
 
 container_stop () {
 echo "Stop container started"
